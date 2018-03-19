@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>﻿ε≡٩(๑&gt;₃&lt;)۶ 一心向学</title>
+  
+  <subtitle>2018 我全力以赴</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-19T18:40:03.453Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Aeon Evil</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客搭建历程</title>
+    <link href="http://yoursite.com/2018/03/19/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AE%80%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/03/19/博客搭建简记/</id>
+    <published>2018-03-19T15:23:52.269Z</published>
+    <updated>2018-03-19T18:40:03.453Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    好记性不如烂笔头，有时候想把自己学到的点点滴滴记录下来，一直不得其道。由于一次偶然机会接触到markdown，很喜欢其简洁高效的写作方式，所以决定用markdown来记录他们。初步决定用<code>简书</code>，但是经过一番注册之后发现其不够自由和随性，于是决定搭建个人博客。经过多方收集和打听消息，最终决定使用当前流行的 GitHub Pages 和 Hexo搭建。下面就个人搭建过程做个记录，以作备忘、以作分享。</p><h2 id="安装GitHub"><a href="#安装GitHub" class="headerlink" title="安装GitHub"></a>安装GitHub</h2><p>​    首先下载安装<a href="https://desktop.github.com/" target="_blank" rel="noopener">GitHub客户端</a>，后续过程需要该命令工具来执行安装组件的命令。 同时在GitHub上创建用户发布博客的项目，项目命名格式为<code>youName.github.io</code>，这样博客搭建成功以后GitHub给我们搭建的博客分配的默认域名就和该项目一致。</p><h2 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h2><p>   前提：</p><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p><p>​    如果上述成功安装，通过Git Bash 客户端执行：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>​    安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p>​    新建完成后，指定文件夹的目录如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><ul><li><p><strong>_config.yml</strong> 文件是网站的配置文件，可以在其中配置网站的大部分参数。</p></li><li><p><strong>package.json</strong> 文件是应用程序的信息。</p></li><li><p><strong>source</strong> 是资源文件夹，是用来存放用户资源的地方。</p></li><li><p><strong>themes</strong> 是<a href="https://hexo.io/themes" target="_blank" rel="noopener">主题</a>文件夹，Hexo会根据主题来生成不同的静态页面。</p></li><li><p><strong>scaffolds</strong>是模板件夹，当新建文章的时候，Hexo会根据模板来建立文件。</p><p>到此本地博客已经安装好了，现在你可以运行命令:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p> 再访问：localhost:4000 本地试调</p></li></ul><h2 id="主题美化"><a href="#主题美化" class="headerlink" title="主题美化"></a>主题美化</h2><p>​    首先你可以在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo Themes</a>里找一个自己喜欢的主题，然后点击对应的主题进入主题的github项目，一般都有主题制作者编写的详细的安装配置文档，按文档操作就行。</p><h2 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h2><p>​    打开Hexo主文件夹下的<strong>_config.yml</strong>，设置其中的<code>deploy</code> 参数，详细请查看Hexo官方文档中<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">部署部分</a>。</p><p>我的设置如下所示：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git </span><br><span class="line">  repo: git@github.com:aeonevil/aeonevil.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>​    git地址建议使用SSH地址。在上面的参数设置好了之后，使用下面的命令安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener"> hexo-deployer-git </a>插件，只有安装了插件之后才可以部署到GitHub Pages。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>安装完成后用下面的命令进行部署</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g #生成静态文件</span><br><span class="line">$ hexo d #部署到github</span><br></pre></td></tr></table></figure><p>还有一个更快捷的命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g #在部署前先生成</span><br></pre></td></tr></table></figure><h2 id="同步博客"><a href="#同步博客" class="headerlink" title="同步博客"></a>同步博客</h2><p>​    如果你希望在家里编辑发布博客，到了公司也同样，建议把你本地的博客文件上传到GitHub上，在需要的电脑上clone 下来。</p><p><strong>上传</strong></p><p>​    进入博客本地博客文件根目录：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git init </span><br><span class="line"></span><br><span class="line">git remote add origin git@github.com:youGitName/youBlogResourceProject.git</span><br><span class="line"></span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line"></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure><p><strong>克隆</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:youGitName/youBlogResourceProject.git</span><br></pre></td></tr></table></figure><p>再安装node.js，安装完成后，在克隆下来的项目根目录执行 <code>$ hexo s</code> 发现会报<code>ERROR Try running: &#39;npm install hexo --save&#39;</code>，排查之后发现因为node_modules文件没提交到git，在.gitignore文件里忽略了。此时在执行一次命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm -rf node_modules/ &amp;&amp; npm install</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p>即可解决问题。如果把.gitignore文件的<code>/node_modules</code>手动去掉，push 再 pull下来之后会发现启动仍然报db.json文件找不到的问题，db.json文件在.gitignore文件里也是忽略的，所以你提交的时候没提交上去，git里忽略的文件还多，所以不建议此种做法。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    好记性不如烂笔头，有时候想把自己学到的点点滴滴记录下来，一直不得其道。由于一次偶然机会接触到markdown，很喜欢其简洁高效的写作方式，所以决定用markdown来记录他们。初步决定用&lt;code&gt;简书&lt;/code&gt;，但是经过一番注册之后发现其不够自由和随性，于是
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL事物</title>
+    <link href="http://yoursite.com/2018/03/19/%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E4%BA%8B%E7%89%A9/"/>
+    <id>http://yoursite.com/2018/03/19/数据库/MYSQL事物/</id>
+    <published>2018-03-19T15:23:52.267Z</published>
+    <updated>2018-03-19T18:23:34.985Z</updated>
+    
+    <content type="html"><![CDATA[<p>MySql事物机制及其原子性<br><a id="more"></a></p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p><a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_transaction" target="_blank" rel="noopener">MySQL官方说明</a></p><p>事务是可以提交或回滚的原子工作单元。 当事务对数据库进行多次更改时，在提交事务时所有更改都将成功，或者当事务回滚时所有更改都将被撤销。</p><p>由InnoDB实施的数据库事务具有缩写ACID所共有的属性，用于原子性，一致性，隔离性和耐久性。</p><p>另请参见<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_acid" target="_blank" rel="noopener">ACID</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_commit" target="_blank" rel="noopener">提交</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_isolation_level" target="_blank" rel="noopener">隔离级别</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_lock" target="_blank" rel="noopener">锁定</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_rollback" target="_blank" rel="noopener">回滚</a>。</p><p>事物Id与每行相关联的内部字段。 此字段由INSERT，UPDATE和DELETE操作实际更改，以记录哪个事务已锁定该行。</p><p>另请参见<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_implicit_row_lock" target="_blank" rel="noopener">隐式行锁</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_row" target="_blank" rel="noopener">行</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_transaction" target="_blank" rel="noopener">事务</a>。</p><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>InnoDB的事物功能遵循ACID原则</p><p><strong>A:atomicity原子性</strong></p><p>事务是可以提交或回滚的原子工作单元。当事务对数据库进行多次更改时，在提交事务时所有更改都将成功，或者当事务回滚时所有更改都将被撤销。</p><p><strong>C:consistency一致性</strong></p><p>数据库始终保持一致状态 - 每次提交或回滚后，以及事务处理过程中。如果相关数据正在多个表中更新，查询将查看所有旧值或所有新值，而不是旧值和新值的混合。</p><p><strong>I:isolation隔离性</strong> </p><p>事物在进行中被保护（隔离）;他们不能相互干扰或看到彼此的未提交的数据。这种隔离是通过锁定机构实现的。经验丰富的用户可以调整隔离级别，减少保护，有利于提高性能和并发性，以确保交易真的不会相互干扰。</p><p><strong>D:durability持久性</strong></p><p>事务的结果是持久的：一旦提交操作成功，该事务所做的更改就可以避免电源故障，系统崩溃，竞争条件或许多非数据库应用程序容易受到的其他潜在危险。耐久性通常涉及写入磁盘存储，具有一定量的冗余以防止写入操作期间的电源故障或软件崩溃。 （在InnoDB中，双写缓冲区有助于持久耐用。）</p><h3 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h3><p>默认情况下，MySQL运行时启用了自动提交模式。 这意味着，一旦执行更新（修改）表的语句，MySQL将更新存储在磁盘上，使其成为永久性。 更改无法回滚。</p><p>要为一系列语句隐式禁用自动提交模式，请使用START TRANSACTION语句：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">START TRANSACTION;</span><br><span class="line">SELECT @A:=SUM(salary) FROM table1 WHERE type=1;</span><br><span class="line">UPDATE table2 SET summary=@A WHERE type=1;</span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure><p>下列陈述提供对事物使用的控制：</p><p>START TRANSACTION或BEGIN开始一个新的事务。</p><p>COMMIT提交当前事务，使其更改永久。</p><p>ROLLBACK回滚当前事务，取消其更改。</p><p>SET autocommit禁用或启用当前会话的默认自动提交模式。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET autocommit=0;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MySql事物机制及其原子性&lt;br&gt;
+    
+    </summary>
+    
+      <category term="MySql" scheme="http://yoursite.com/categories/MySql/"/>
+    
+    
+      <category term="Transaction" scheme="http://yoursite.com/tags/Transaction/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/03/19/hello-world/"/>
+    <id>http://yoursite.com/2018/03/19/hello-world/</id>
+    <published>2018-03-19T09:49:55.484Z</published>
+    <updated>2018-03-19T17:06:42.924Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Welcome to Hexo! This is your very first post.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
