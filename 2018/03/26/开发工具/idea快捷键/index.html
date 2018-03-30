@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Aeon Evil" />
+
+
+
+<meta name="description" content="工欲善其事必先利其器，放在这就是说：想要提高编码效率，就需要学会使用IDEA快捷方式">
+<meta name="keywords" content="short cut">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IntelliJ IDEA 快捷键">
+<meta property="og:url" content="https://aeonevil.github.io/2018/03/26/开发工具/idea快捷键/index.html">
+<meta property="og:site_name" content="﻿ε≡٩(๑&gt;₃&lt;)۶ 一心向学">
+<meta property="og:description" content="工欲善其事必先利其器，放在这就是说：想要提高编码效率，就需要学会使用IDEA快捷方式">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-30T09:36:01.085Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IntelliJ IDEA 快捷键">
+<meta name="twitter:description" content="工欲善其事必先利其器，放在这就是说：想要提高编码效率，就需要学会使用IDEA快捷方式">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="﻿ε≡٩(๑&gt;₃&lt;)۶ 一心向学" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/img/luolita_favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>IntelliJ IDEA 快捷键 | ﻿ε≡٩(๑&gt;₃&lt;)۶ 一心向学</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/luolita.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Aeon Evil</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">:ஐ٩(๑´ᵕ`)۶ஐ:* 学习使我进步</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="#" title="Email"></a>
+                            
+                                <a class="fa 新浪微博" href="#" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa CSDN" href="/" title="CSDN"></a>
+                            
+                                <a class="fa bilibili" href="/" title="bilibili"></a>
+                            
+                                <a class="fa Google" href="#" title="Google"></a>
+                            
+                                <a class="fa LinkedIn" href="#" title="LinkedIn"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transaction/">Transaction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/short-cut/">short cut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/start/">start</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">Github</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于后端研发、技术架构和区块链底层</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Aeon Evil</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/luolita.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Aeon Evil</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">:ஐ٩(๑´ᵕ`)۶ஐ:* 学习使我进步</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="#" title="Email"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="#" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="/" title="CSDN"></a>
+                            
+                                <a class="fa bilibili" target="_blank" href="/" title="bilibili"></a>
+                            
+                                <a class="fa Google" target="_blank" href="#" title="Google"></a>
+                            
+                                <a class="fa LinkedIn" target="_blank" href="#" title="LinkedIn"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-开发工具/idea快捷键" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/03/26/开发工具/idea快捷键/" class="article-date">
+      <time datetime="2018-03-26T11:18:38.698Z" itemprop="datePublished">2018-03-26</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      IntelliJ IDEA 快捷键
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/idea/">idea</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/short-cut/">short cut</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="Ctrl"><a href="#Ctrl" class="headerlink" title="Ctrl"></a>Ctrl</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + F</td>
+<td>在当前文件进行文本查找 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + R</td>
+<td>在当前文件进行文本替换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Z</td>
+<td>撤销 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Y</td>
+<td>删除光标所在行 或 删除选中的行 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + X</td>
+<td>剪切光标所在行 或 剪切选择内容</td>
+</tr>
+<tr>
+<td>Ctrl + C</td>
+<td>复制光标所在行 或 复制选择内容</td>
+</tr>
+<tr>
+<td>Ctrl + D</td>
+<td>复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + W</td>
+<td>递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + E</td>
+<td>显示最近打开的文件记录列表 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + N</td>
+<td>根据输入的 <strong>类名</strong> 查找类文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + G</td>
+<td>在当前文件跳转到指定行处</td>
+</tr>
+<tr>
+<td>Ctrl + J</td>
+<td>插入自定义动态代码模板 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + P</td>
+<td>方法参数提示显示 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Q</td>
+<td>光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容</td>
+</tr>
+<tr>
+<td>Ctrl + U</td>
+<td>前往当前光标所在的方法的父类的方法 / 接口定义 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + B</td>
+<td>进入光标所在的方法/变量的接口或是定义处，等效于 <code>Ctrl + 左键单击</code> <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + K</td>
+<td>版本控制提交项目，需要此项目有加入到版本控制才可用</td>
+</tr>
+<tr>
+<td>Ctrl + T</td>
+<td>版本控制更新项目，需要此项目有加入到版本控制才可用</td>
+</tr>
+<tr>
+<td>Ctrl + H</td>
+<td>显示当前类的层次结构</td>
+</tr>
+<tr>
+<td>Ctrl + O</td>
+<td>选择可重写的方法</td>
+</tr>
+<tr>
+<td>Ctrl + I</td>
+<td>选择可继承的方法</td>
+</tr>
+<tr>
+<td>Ctrl + +</td>
+<td>展开代码</td>
+</tr>
+<tr>
+<td>Ctrl + -</td>
+<td>折叠代码</td>
+</tr>
+<tr>
+<td>Ctrl + /</td>
+<td>注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + [</td>
+<td>移动光标到当前所在代码的花括号开始位置</td>
+</tr>
+<tr>
+<td>Ctrl + ]</td>
+<td>移动光标到当前所在代码的花括号结束位置</td>
+</tr>
+<tr>
+<td>Ctrl + F1</td>
+<td>在光标所在的错误代码处显示错误信息 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + F3</td>
+<td>调转到所选中的词的下一个引用位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + F4</td>
+<td>关闭当前编辑文件</td>
+</tr>
+<tr>
+<td>Ctrl + F8</td>
+<td>在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点</td>
+</tr>
+<tr>
+<td>Ctrl + F9</td>
+<td>执行 Make Project 操作</td>
+</tr>
+<tr>
+<td>Ctrl + F11</td>
+<td>选中文件 / 文件夹，使用助记符设定 / 取消书签 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + F12</td>
+<td>弹出当前文件结构层，可以在弹出的层上直接输入，进行筛选</td>
+</tr>
+<tr>
+<td>Ctrl + Tab</td>
+<td>编辑窗口切换，如果在切换的过程又加按上delete，则是关闭对应选中的窗口</td>
+</tr>
+<tr>
+<td>Ctrl + End</td>
+<td>跳到文件尾</td>
+</tr>
+<tr>
+<td>Ctrl + Home</td>
+<td>跳到文件头</td>
+</tr>
+<tr>
+<td>Ctrl + Space</td>
+<td>基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 <code>Ctrl + 逗号</code> <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Delete</td>
+<td>删除光标后面的单词或是中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + BackSpace</td>
+<td>删除光标前面的单词或是中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + 1,2,3…9</td>
+<td>定位到对应数值的书签位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + 左键单击</td>
+<td>在打开的文件标题上，弹出该文件路径 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + 光标定位</td>
+<td>按 Ctrl 不要松开，会显示光标所在的类信息摘要</td>
+</tr>
+<tr>
+<td>Ctrl + 左方向键</td>
+<td>光标跳转到当前单词 / 中文句的左侧开头位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + 右方向键</td>
+<td>光标跳转到当前单词 / 中文句的右侧开头位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + 前方向键</td>
+<td>等效于鼠标滚轮向前效果 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + 后方向键</td>
+<td>等效于鼠标滚轮向后效果 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Alt"><a href="#Alt" class="headerlink" title="Alt"></a>Alt</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alt + `</td>
+<td>显示版本控制常用操作菜单弹出层 <code>（必备）</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Alt + Q</td>
+<td>弹出一个提示，显示当前类的声明 / 上下文信息</td>
+</tr>
+<tr>
+<td>Alt + F1</td>
+<td>显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + F2</td>
+<td>对于前面页面，显示各类浏览器打开目标选择弹出层</td>
+</tr>
+<tr>
+<td>Alt + F3</td>
+<td>选中文本，逐个往下查找相同文本，并高亮显示</td>
+</tr>
+<tr>
+<td>Alt + F7</td>
+<td>查找光标所在的方法 / 变量 / 类被调用的地方</td>
+</tr>
+<tr>
+<td>Alt + F8</td>
+<td>在 Debug 的状态下，选中对象，弹出可输入计算表达式调试框，查看该输入内容的调试结果</td>
+</tr>
+<tr>
+<td>Alt + Home</td>
+<td>定位 / 显示到当前文件的 <code>Navigation Bar</code></td>
+</tr>
+<tr>
+<td>Alt + Enter</td>
+<td>IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + Insert</td>
+<td>代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + 左方向键</td>
+<td>切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + 右方向键</td>
+<td>按切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + 前方向键</td>
+<td>当前光标跳转到当前文件的前一个方法名位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + 后方向键</td>
+<td>当前光标跳转到当前文件的后一个方法名位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + 1,2,3…9</td>
+<td>显示对应数值的选项卡，其中 1 是 Project 用得最多 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Shift"><a href="#Shift" class="headerlink" title="Shift"></a>Shift</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shift + F1</td>
+<td>如果有外部文档可以连接外部文档</td>
+</tr>
+<tr>
+<td>Shift + F2</td>
+<td>跳转到上一个高亮错误 或 警告位置</td>
+</tr>
+<tr>
+<td>Shift + F3</td>
+<td>在查找模式下，查找匹配上一个</td>
+</tr>
+<tr>
+<td>Shift + F4</td>
+<td>对当前打开的文件，使用新Windows窗口打开，旧窗口保留</td>
+</tr>
+<tr>
+<td>Shift + F6</td>
+<td>对文件 / 文件夹 重命名</td>
+</tr>
+<tr>
+<td>Shift + F7</td>
+<td>在 Debug 模式下，智能步入。断点所在行上有多个方法调用，会弹出进入哪个方法</td>
+</tr>
+<tr>
+<td>Shift + F8</td>
+<td>在 Debug 模式下，跳出，表现出来的效果跟 <code>F9</code> 一样</td>
+</tr>
+<tr>
+<td>Shift + F9</td>
+<td>等效于点击工具栏的 <code>Debug</code> 按钮</td>
+</tr>
+<tr>
+<td>Shift + F10</td>
+<td>等效于点击工具栏的 <code>Run</code> 按钮</td>
+</tr>
+<tr>
+<td>Shift + F11</td>
+<td>弹出书签显示层 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Shift + Tab</td>
+<td>取消缩进 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Shift + ESC</td>
+<td>隐藏当前 或 最后一个激活的工具窗口</td>
+</tr>
+<tr>
+<td>Shift + End</td>
+<td>选中光标到当前行尾位置</td>
+</tr>
+<tr>
+<td>Shift + Home</td>
+<td>选中光标到当前行头位置</td>
+</tr>
+<tr>
+<td>Shift + Enter</td>
+<td>开始新一行。光标所在行下空出一行，光标定位到新行位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Shift + 左键单击</td>
+<td>在打开的文件名上按此快捷键，可以关闭当前打开文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Shift + 滚轮前后滚动</td>
+<td>当前文件的横向滚动轴滚动 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Ctrl-Alt"><a href="#Ctrl-Alt" class="headerlink" title="Ctrl + Alt"></a>Ctrl + Alt</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + Alt + L</td>
+<td>格式化代码，可以对当前文件和整个包目录使用 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + O</td>
+<td>优化导入的类，可以对当前文件和整个包目录使用 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + I</td>
+<td>光标所在行 或 选中部分进行自动代码缩进，有点类似格式化</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + T</td>
+<td>对选中的代码弹出环绕选项弹出层 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + J</td>
+<td>弹出模板选择窗口，将选定的代码加入动态模板中</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + H</td>
+<td>调用层次</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + B</td>
+<td>在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + C</td>
+<td>重构-快速提取常量</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + F</td>
+<td>重构-快速提取成员变量</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + V</td>
+<td>重构-快速提取变量</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + Y</td>
+<td>同步、刷新</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + S</td>
+<td>打开 IntelliJ IDEA 系统设置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + F7</td>
+<td>显示使用的地方。寻找被该类或是变量被调用的地方，用弹出框的方式找出来</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + F11</td>
+<td>切换全屏模式</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + Enter</td>
+<td>光标所在行上空出一行，光标定位到新行 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + Home</td>
+<td>弹出跟当前文件有关联的文件弹出层</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + Space</td>
+<td>类名自动完成</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + 左方向键</td>
+<td>退回到上一个操作的地方 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + 右方向键</td>
+<td>前进到上一个操作的地方 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Alt + 前方向键</td>
+<td>在查找模式下，跳到上个查找的文件</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + 后方向键</td>
+<td>在查找模式下，跳到下个查找的文件</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + 右括号（]）</td>
+<td>在打开多个项目的情况下，切换下一个项目窗口</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + 左括号（[）</td>
+<td>在打开多个项目的情况下，切换上一个项目窗口</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Ctrl-Shift"><a href="#Ctrl-Shift" class="headerlink" title="Ctrl + Shift"></a>Ctrl + Shift</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + Shift + F</td>
+<td>根据输入内容查找整个项目 或 指定目录内文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + R</td>
+<td>根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + J</td>
+<td>自动将下一行合并到当前行末尾 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Z</td>
+<td>取消撤销 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + W</td>
+<td>递进式取消选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展取消选中范围 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + N</td>
+<td>通过文件名定位 / 打开文件 / 目录，打开目录需要在输入的内容后面多加一个正斜杠 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + U</td>
+<td>对选中的代码进行大 / 小写轮流转换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + T</td>
+<td>对当前类生成单元测试类，如果已经存在的单元测试类则可以进行选择 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + C</td>
+<td>复制当前文件磁盘路径到剪贴板 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + V</td>
+<td>弹出缓存的最近拷贝的内容管理器弹出层</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + E</td>
+<td>显示最近修改的文件列表的弹出层</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + H</td>
+<td>显示方法层次结构</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + B</td>
+<td>跳转到类型声明处 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + I</td>
+<td>快速查看光标所在的方法 或 类的定义</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + A</td>
+<td>查找动作 / 设置</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + /</td>
+<td>代码块注释 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + [</td>
+<td>选中从光标所在位置到它的顶部中括号位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + ]</td>
+<td>选中从光标所在位置到它的底部中括号位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + +</td>
+<td>展开所有代码 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + -</td>
+<td>折叠所有代码 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + F7</td>
+<td>高亮显示所有该选中文本，按Esc高亮消失 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + F8</td>
+<td>在 Debug 模式下，指定断点进入条件</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + F9</td>
+<td>编译选中的文件 / 包 / Module</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + F12</td>
+<td>编辑器最大化 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Space</td>
+<td>智能代码提示</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Enter</td>
+<td>自动结束代码，行末自动添加分号 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Backspace</td>
+<td>退回到上次修改的地方 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + 1,2,3…9</td>
+<td>快速添加指定数值的书签 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + 左键单击</td>
+<td>把光标放在某个类变量上，按此快捷键可以直接定位到该类中 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + 左方向键</td>
+<td>在代码文件上，光标跳转到当前单词 / 中文句的左侧开头位置，同时选中该单词 / 中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + 右方向键</td>
+<td>在代码文件上，光标跳转到当前单词 / 中文句的右侧开头位置，同时选中该单词 / 中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + 前方向键</td>
+<td>光标放在方法名上，将方法移动到上一个方法前面，调整方法排序 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + 后方向键</td>
+<td>光标放在方法名上，将方法移动到下一个方法前面，调整方法排序 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Alt-Shift"><a href="#Alt-Shift" class="headerlink" title="Alt + Shift"></a>Alt + Shift</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alt + Shift + N</td>
+<td>选择 / 添加 task <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + Shift + F</td>
+<td>显示添加到收藏夹弹出层 / 添加到收藏夹</td>
+</tr>
+<tr>
+<td>Alt + Shift + C</td>
+<td>查看最近操作项目的变化情况列表</td>
+</tr>
+<tr>
+<td>Alt + Shift + I</td>
+<td>查看项目当前文件</td>
+</tr>
+<tr>
+<td>Alt + Shift + F7</td>
+<td>在 Debug 模式下，下一步，进入当前方法体内，如果方法体还有方法，则会进入该内嵌的方法中，依此循环进入</td>
+</tr>
+<tr>
+<td>Alt + Shift + F9</td>
+<td>弹出 <code>Debug</code> 的可选择菜单</td>
+</tr>
+<tr>
+<td>Alt + Shift + F10</td>
+<td>弹出 <code>Run</code> 的可选择菜单</td>
+</tr>
+<tr>
+<td>Alt + Shift + 左键双击</td>
+<td>选择被双击的单词 / 中文句，按住不放，可以同时选择其他单词 / 中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + Shift + 前方向键</td>
+<td>移动光标所在行向上移动 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Alt + Shift + 后方向键</td>
+<td>移动光标所在行向下移动 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Ctrl-Shift-Alt"><a href="#Ctrl-Shift-Alt" class="headerlink" title="Ctrl + Shift + Alt"></a>Ctrl + Shift + Alt</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + Shift + Alt + V</td>
+<td>无格式黏贴 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Alt + N</td>
+<td>前往指定的变量 / 方法</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Alt + S</td>
+<td>打开当前项目设置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Alt + C</td>
+<td>复制参考信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F2</td>
+<td>跳转到下一个高亮错误 或 警告位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>F3</td>
+<td>在查找模式下，定位到下一个匹配处</td>
+</tr>
+<tr>
+<td>F4</td>
+<td>编辑源 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>F7</td>
+<td>在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中</td>
+</tr>
+<tr>
+<td>F8</td>
+<td>在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内</td>
+</tr>
+<tr>
+<td>F9</td>
+<td>在 Debug 模式下，恢复程序运行，但是如果该断点下面代码还有断点则停在下一个断点上</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>添加书签 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>F12</td>
+<td>回到前一个工具窗口 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>缩进 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>从工具窗口进入代码文件窗口 <code>（必备）</code></td>
+</tr>
+<tr>
+<td>连按两次Shift</td>
+<td>弹出 <code>Search Everywhere</code> 弹出层</td>
+</tr>
+</tbody>
+</table>
+<h2 id="官网快捷键资料"><a href="#官网快捷键资料" class="headerlink" title="官网快捷键资料"></a>官网快捷键资料</h2><h2 id="官网快捷键资料-1"><a href="#官网快捷键资料-1" class="headerlink" title="官网快捷键资料"></a>官网快捷键资料</h2><blockquote>
+<ul>
+<li>Windows / Linux：<a href="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf" target="_blank" rel="noopener">https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf</a></li>
+<li>Mac OS X：<a href="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf" target="_blank" rel="noopener">https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf</a></li>
+</ul>
+</blockquote>
+<h2 id="第三方快捷键资料"><a href="#第三方快捷键资料" class="headerlink" title="第三方快捷键资料"></a>第三方快捷键资料</h2><blockquote>
+<ul>
+<li>来自 eta02913：<a href="http://xinyuwu.iteye.com/blog/1005454" target="_blank" rel="noopener">http://xinyuwu.iteye.com/blog/1005454</a></li>
+</ul>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/03/26/开发工具/idea快捷键/">IntelliJ IDEA 快捷键</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Aeon Evil</a></p>
+        <p><span>发布时间:</span>2018-03-26, 19:18:38</p>
+        <p><span>最后更新:</span>2018-03-30, 17:36:01</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/26/开发工具/idea快捷键/" title="IntelliJ IDEA 快捷键">https://aeonevil.github.io/2018/03/26/开发工具/idea快捷键/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://aeonevil.github.io/2018/03/26/开发工具/idea快捷键/　　作者: Aeon Evil" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/03/19/hexo/博客搭建历程/">
+                    博客搭建历程
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ctrl"><span class="toc-number">1.</span> <span class="toc-text">Ctrl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Alt"><span class="toc-number">2.</span> <span class="toc-text">Alt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Shift"><span class="toc-number">3.</span> <span class="toc-text">Shift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ctrl-Alt"><span class="toc-number">4.</span> <span class="toc-text">Ctrl + Alt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ctrl-Shift"><span class="toc-number">5.</span> <span class="toc-text">Ctrl + Shift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Alt-Shift"><span class="toc-number">6.</span> <span class="toc-text">Alt + Shift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ctrl-Shift-Alt"><span class="toc-number">7.</span> <span class="toc-text">Ctrl + Shift + Alt</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">8.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#官网快捷键资料"><span class="toc-number">9.</span> <span class="toc-text">官网快捷键资料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#官网快捷键资料-1"><span class="toc-number">10.</span> <span class="toc-text">官网快捷键资料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三方快捷键资料"><span class="toc-number">11.</span> <span class="toc-text">第三方快捷键资料</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"IntelliJ IDEA 快捷键　| ﻿ε≡٩(๑>₃<)۶ 一心向学　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/03/19/hexo/博客搭建历程/" title="下一篇: 博客搭建历程">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/26/开发工具/idea快捷键/">IntelliJ IDEA 快捷键</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/hexo/博客搭建历程/">博客搭建历程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/数据库/MYSQL事物/">MySQL事物</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/hexo/hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2018 Aeon Evil
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
