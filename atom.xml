@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aeonevil.github.io/"/>
-  <updated>2018-03-30T09:36:01.085Z</updated>
+  <updated>2018-03-30T10:15:04.068Z</updated>
   <id>https://aeonevil.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://aeonevil.github.io/2018/03/30/%E4%BB%85%E9%99%90%E6%9C%AC%E5%9C%B0MD/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://aeonevil.github.io/2018/03/30/仅限本地MD/测试/</id>
+    <published>2018-03-30T10:11:52.957Z</published>
+    <updated>2018-03-30T10:15:04.068Z</updated>
+    
+    <content type="html"><![CDATA[<p>回顾过去 展未来</p>]]></content>
+    
+    <summary type="html">
+    
+      测试测试测试
+    
+    </summary>
+    
+      <category term="个人" scheme="https://aeonevil.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
+    
+    
+      <category term="测试" scheme="https://aeonevil.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年个人总体规划</title>
+    <link href="https://aeonevil.github.io/2018/03/30/%E4%BB%85%E9%99%90%E6%9C%AC%E5%9C%B0MD/%E4%B8%AA%E4%BA%BA%E8%A7%84%E5%88%92/2018%E4%B8%AA%E4%BA%BA%E6%80%BB%E4%BD%93%E8%A7%84%E5%88%92/"/>
+    <id>https://aeonevil.github.io/2018/03/30/仅限本地MD/个人规划/2018个人总体规划/</id>
+    <published>2018-03-30T10:07:11.731Z</published>
+    <updated>2018-03-30T10:06:20.533Z</updated>
+    
+    <content type="html"><![CDATA[<p>回顾过去</p>]]></content>
+    
+    <summary type="html">
+    
+      仔细想想，大学四年和工作的三年半，是不是都活到狗身上去了？当下所为及未来规划都是些什么？无论大小皆一事无成，无论远近皆漫无目的？
+    
+    </summary>
+    
+      <category term="个人" scheme="https://aeonevil.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
+    
+    
+      <category term="规划" scheme="https://aeonevil.github.io/tags/%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>IntelliJ IDEA 快捷键</title>
@@ -65,13 +109,13 @@
     <link href="https://aeonevil.github.io/2018/03/19/%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E4%BA%8B%E7%89%A9/"/>
     <id>https://aeonevil.github.io/2018/03/19/数据库/MYSQL事物/</id>
     <published>2018-03-19T15:23:52.267Z</published>
-    <updated>2018-03-19T18:23:34.985Z</updated>
+    <updated>2018-03-30T10:18:18.356Z</updated>
     
-    <content type="html"><![CDATA[<p>MySql事物机制及其原子性<br><a id="more"></a></p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p><a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_transaction" target="_blank" rel="noopener">MySQL官方说明</a></p><p>事务是可以提交或回滚的原子工作单元。 当事务对数据库进行多次更改时，在提交事务时所有更改都将成功，或者当事务回滚时所有更改都将被撤销。</p><p>由InnoDB实施的数据库事务具有缩写ACID所共有的属性，用于原子性，一致性，隔离性和耐久性。</p><p>另请参见<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_acid" target="_blank" rel="noopener">ACID</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_commit" target="_blank" rel="noopener">提交</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_isolation_level" target="_blank" rel="noopener">隔离级别</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_lock" target="_blank" rel="noopener">锁定</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_rollback" target="_blank" rel="noopener">回滚</a>。</p><p>事物Id与每行相关联的内部字段。 此字段由INSERT，UPDATE和DELETE操作实际更改，以记录哪个事务已锁定该行。</p><p>另请参见<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_implicit_row_lock" target="_blank" rel="noopener">隐式行锁</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_row" target="_blank" rel="noopener">行</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_transaction" target="_blank" rel="noopener">事务</a>。</p><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>InnoDB的事物功能遵循ACID原则</p><p><strong>A:atomicity原子性</strong></p><p>事务是可以提交或回滚的原子工作单元。当事务对数据库进行多次更改时，在提交事务时所有更改都将成功，或者当事务回滚时所有更改都将被撤销。</p><p><strong>C:consistency一致性</strong></p><p>数据库始终保持一致状态 - 每次提交或回滚后，以及事务处理过程中。如果相关数据正在多个表中更新，查询将查看所有旧值或所有新值，而不是旧值和新值的混合。</p><p><strong>I:isolation隔离性</strong> </p><p>事物在进行中被保护（隔离）;他们不能相互干扰或看到彼此的未提交的数据。这种隔离是通过锁定机构实现的。经验丰富的用户可以调整隔离级别，减少保护，有利于提高性能和并发性，以确保交易真的不会相互干扰。</p><p><strong>D:durability持久性</strong></p><p>事务的结果是持久的：一旦提交操作成功，该事务所做的更改就可以避免电源故障，系统崩溃，竞争条件或许多非数据库应用程序容易受到的其他潜在危险。耐久性通常涉及写入磁盘存储，具有一定量的冗余以防止写入操作期间的电源故障或软件崩溃。 （在InnoDB中，双写缓冲区有助于持久耐用。）</p><h3 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h3><p>默认情况下，MySQL运行时启用了自动提交模式。 这意味着，一旦执行更新（修改）表的语句，MySQL将更新存储在磁盘上，使其成为永久性。 更改无法回滚。</p><p>要为一系列语句隐式禁用自动提交模式，请使用START TRANSACTION语句：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">START TRANSACTION;</span><br><span class="line">SELECT @A:=SUM(salary) FROM table1 WHERE type=1;</span><br><span class="line">UPDATE table2 SET summary=@A WHERE type=1;</span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure><p>下列陈述提供对事物使用的控制：</p><p>START TRANSACTION或BEGIN开始一个新的事务。</p><p>COMMIT提交当前事务，使其更改永久。</p><p>ROLLBACK回滚当前事务，取消其更改。</p><p>SET autocommit禁用或启用当前会话的默认自动提交模式。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET autocommit=0;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>MySql事物属性<br><a id="more"></a></p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p><a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_transaction" target="_blank" rel="noopener">MySQL官方说明</a></p><p>事务是可以提交或回滚的原子工作单元。 当事务对数据库进行多次更改时，在提交事务时所有更改都将成功，或者当事务回滚时所有更改都将被撤销。</p><p>由InnoDB实施的数据库事务具有缩写ACID所共有的属性，用于原子性，一致性，隔离性和耐久性。</p><p>另请参见<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_acid" target="_blank" rel="noopener">ACID</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_commit" target="_blank" rel="noopener">提交</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_isolation_level" target="_blank" rel="noopener">隔离级别</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_lock" target="_blank" rel="noopener">锁定</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_rollback" target="_blank" rel="noopener">回滚</a>。</p><p>事物Id与每行相关联的内部字段。 此字段由INSERT，UPDATE和DELETE操作实际更改，以记录哪个事务已锁定该行。</p><p>另请参见<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_implicit_row_lock" target="_blank" rel="noopener">隐式行锁</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_row" target="_blank" rel="noopener">行</a>，<a href="https://dev.mysql.com/doc/refman/5.7/en/glossary.html#glos_transaction" target="_blank" rel="noopener">事务</a>。</p><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>InnoDB的事物功能遵循ACID原则</p><p><strong>A:atomicity原子性</strong></p><p>事务是可以提交或回滚的原子工作单元。当事务对数据库进行多次更改时，在提交事务时所有更改都将成功，或者当事务回滚时所有更改都将被撤销。</p><p><strong>C:consistency一致性</strong></p><p>数据库始终保持一致状态 - 每次提交或回滚后，以及事务处理过程中。如果相关数据正在多个表中更新，查询将查看所有旧值或所有新值，而不是旧值和新值的混合。</p><p><strong>I:isolation隔离性</strong> </p><p>事物在进行中被保护（隔离）;他们不能相互干扰或看到彼此的未提交的数据。这种隔离是通过锁定机构实现的。经验丰富的用户可以调整隔离级别，减少保护，有利于提高性能和并发性，以确保交易真的不会相互干扰。</p><p><strong>D:durability持久性</strong></p><p>事务的结果是持久的：一旦提交操作成功，该事务所做的更改就可以避免电源故障，系统崩溃，竞争条件或许多非数据库应用程序容易受到的其他潜在危险。耐久性通常涉及写入磁盘存储，具有一定量的冗余以防止写入操作期间的电源故障或软件崩溃。 （在InnoDB中，双写缓冲区有助于持久耐用。）</p><h3 id="开启"><a href="#开启" class="headerlink" title="开启"></a>开启</h3><p>默认情况下，MySQL运行时启用了自动提交模式。 这意味着，一旦执行更新（修改）表的语句，MySQL将更新存储在磁盘上，使其成为永久性。 更改无法回滚。</p><p>要为一系列语句隐式禁用自动提交模式，请使用START TRANSACTION语句：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">START TRANSACTION;</span><br><span class="line">SELECT @A:=SUM(salary) FROM table1 WHERE type=1;</span><br><span class="line">UPDATE table2 SET summary=@A WHERE type=1;</span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure><p>下列陈述提供对事物使用的控制：</p><p>START TRANSACTION或BEGIN开始一个新的事务。</p><p>COMMIT提交当前事务，使其更改永久。</p><p>ROLLBACK回滚当前事务，取消其更改。</p><p>SET autocommit禁用或启用当前会话的默认自动提交模式。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET autocommit=0;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;MySql事物机制及其原子性&lt;br&gt;
+      &lt;p&gt;MySql事物属性&lt;br&gt;
     
     </summary>
     
