@@ -19,11 +19,11 @@
 <meta name="keywords" content="Blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客搭建历程">
-<meta property="og:url" content="https://aeonevil.github.io/2018/03/19/hexo/博客搭建历程/index.html">
+<meta property="og:url" content="https://aeonevil.github.io/2018/03/19/云上MD/Hexo主题/博客搭建历程/index.html">
 <meta property="og:site_name" content="﻿ε≡٩(๑&gt;₃&lt;)۶ 一心向学">
 <meta property="og:description" content="好记性不如烂笔头，有时候想把自己学到的点点滴滴记录下来，一直不得其道。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-19T18:45:33.330Z">
+<meta property="og:updated_time" content="2018-03-30T13:58:47.002Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建历程">
 <meta name="twitter:description" content="好记性不如烂笔头，有时候想把自己学到的点点滴滴记录下来，一直不得其道。">
@@ -204,7 +204,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transaction/">Transaction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/short-cut/">short cut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/start/">start</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Transaction/">Transaction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/start/">start</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/快捷键/">快捷键</a></li></ul>
                     </div>
                 </section>
                 
@@ -291,10 +291,10 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hexo/博客搭建历程" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-云上MD/Hexo主题/博客搭建历程" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/03/19/hexo/博客搭建历程/" class="article-date">
+      <a href="/2018/03/19/云上MD/Hexo主题/博客搭建历程/" class="article-date">
       <time datetime="2018-03-19T15:23:52.269Z" itemprop="datePublished">2018-03-19</time>
 </a>
 
@@ -336,8 +336,8 @@
       
           
         <p>​    由于一次偶然机会接触到markdown，很喜欢其简洁高效的写作方式，所以决定用markdown来记录他们。初步决定用<code>简书</code>，但是经过一番注册之后发现其不够自由和随性，于是决定搭建个人博客。经过多方收集和打听消息，最终决定使用当前流行的 GitHub Pages 和 Hexo搭建。下面就个人搭建过程做个记录，以作备忘、以作分享。</p>
-<h2 id="安装GitHub"><a href="#安装GitHub" class="headerlink" title="安装GitHub"></a>安装GitHub</h2><p>​    首先下载安装<a href="https://desktop.github.com/" target="_blank" rel="noopener">GitHub客户端</a>，后续过程需要该命令工具来执行安装组件的命令。 同时在GitHub上创建用户发布博客的项目，项目命名格式为<code>youName.github.io</code>，这样博客搭建成功以后GitHub给我们搭建的博客分配的默认域名就和该项目一致。</p>
-<h2 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h2><p>   前提：</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>​    首先下载安装<a href="https://desktop.github.com/" target="_blank" rel="noopener">GitHub客户端</a>，后续过程需要该命令工具来执行安装组件的命令。 同时在GitHub上创建用户发布博客的项目，项目命名格式为<code>youName.github.io</code>，这样博客搭建成功以后GitHub给我们搭建的博客分配的默认域名就和该项目一致。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>   前提：</p>
 <p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
 <p>​    如果上述成功安装，通过Git Bash 客户端执行：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
@@ -381,6 +381,14 @@
 <p>或者</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>即可解决问题。如果把.gitignore文件的<code>/node_modules</code>手动去掉，push 再 pull下来之后会发现启动仍然报db.json文件找不到的问题，db.json文件在.gitignore文件里也是忽略的，所以你提交的时候没提交上去，git里忽略的文件还多，所以不建议此种做法。</p>
+<h2 id="跳过文件"><a href="#跳过文件" class="headerlink" title="跳过文件"></a>跳过文件</h2><p>如果想在source目录下存放其它文件或文件夹，而不被处理，仅仅被copy到public目录中对应目录。那么有以下两种做法：</p>
+<ol>
+<li><p>站点文件的<code>skip_render</code>参数配置成以<code>source</code>为根目录的文件路径。可参考<a href="https://hexo.io/zh-cn/docs/commands.html#render" target="_blank" rel="noopener">官方说明</a>和<a href="https://github.com/hexojs/hexo/issues/1146" target="_blank" rel="noopener">相关问题issues</a>。</p>
+</li>
+<li><p>文件夹之前加下划线<code>-</code>，可参考<a href="https://hexo.io/zh-cn/docs/setup.html#source" target="_blank" rel="noopener">官方说明</a>。</p>
+</li>
+</ol>
+<p>由此可方便实现部分不愿意上传的文章本地可见，文件夹前加<code>-</code>不上传的效果。</p>
 
       
     </div>
@@ -389,13 +397,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/03/19/hexo/博客搭建历程/">博客搭建历程</a></p>
+        <p><span>本文标题:</span><a href="/2018/03/19/云上MD/Hexo主题/博客搭建历程/">博客搭建历程</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Aeon Evil</a></p>
         <p><span>发布时间:</span>2018-03-19, 23:23:52</p>
-        <p><span>最后更新:</span>2018-03-20, 02:45:33</p>
+        <p><span>最后更新:</span>2018-03-30, 21:58:47</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/03/19/hexo/博客搭建历程/" title="博客搭建历程">https://aeonevil.github.io/2018/03/19/hexo/博客搭建历程/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://aeonevil.github.io/2018/03/19/hexo/博客搭建历程/　　作者: Aeon Evil" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/19/云上MD/Hexo主题/博客搭建历程/" title="博客搭建历程">https://aeonevil.github.io/2018/03/19/云上MD/Hexo主题/博客搭建历程/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://aeonevil.github.io/2018/03/19/云上MD/Hexo主题/博客搭建历程/　　作者: Aeon Evil" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -408,14 +416,14 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/03/26/开发工具/idea快捷键/">
-                    IntelliJ IDEA 快捷键
+                <a href="/2018/04/01/云上MD/开发工具/Idea官方快捷键windows/">
+                    IntelliJ IDEA官方Windows和Linux快捷键 中文版
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/03/19/数据库/MYSQL事物/">
+                <a href="/2018/03/19/云上MD/数据库/MYSQL事物/">
                     MySQL事物
                 </a>
             </div>
@@ -428,7 +436,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装GitHub"><span class="toc-number">1.</span> <span class="toc-text">安装GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装HEXO"><span class="toc-number">2.</span> <span class="toc-text">安装HEXO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题美化"><span class="toc-number">3.</span> <span class="toc-text">主题美化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目部署"><span class="toc-number">4.</span> <span class="toc-text">项目部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步博客"><span class="toc-number">5.</span> <span class="toc-text">同步博客</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">1.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">2.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题美化"><span class="toc-number">3.</span> <span class="toc-text">主题美化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目部署"><span class="toc-number">4.</span> <span class="toc-text">项目部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步博客"><span class="toc-number">5.</span> <span class="toc-text">同步博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#跳过文件"><span class="toc-number">6.</span> <span class="toc-text">跳过文件</span></a></li></ol>
         
     </div>
     <style>
@@ -484,7 +492,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/03/26/开发工具/idea快捷键/" title="上一篇: IntelliJ IDEA 快捷键">
+            <a href="/2018/04/01/云上MD/开发工具/Idea官方快捷键windows/" title="上一篇: IntelliJ IDEA官方Windows和Linux快捷键 中文版">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -492,13 +500,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/03/19/数据库/MYSQL事物/" title="下一篇: MySQL事物">
+            <a href="/2018/03/19/云上MD/数据库/MYSQL事物/" title="下一篇: MySQL事物">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/26/开发工具/idea快捷键/">IntelliJ IDEA 快捷键</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/hexo/博客搭建历程/">博客搭建历程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/数据库/MYSQL事物/">MySQL事物</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/hexo/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/01/云上MD/开发工具/Idea官方快捷键windows/">IntelliJ IDEA官方Windows和Linux快捷键 中文版</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/云上MD/Hexo主题/博客搭建历程/">博客搭建历程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/云上MD/数据库/MYSQL事物/">MySQL事物</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/19/云上MD/Hexo主题/hello-world/">Hello World</a></li></ul>
 
 
 
